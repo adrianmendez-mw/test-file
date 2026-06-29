@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2022-02-16" xmlns:pcbcr="https://commission.europa.eu/taxonomy/pcbcr/2025-12-31/pcbcr_cor">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8"/>
+<title>pCBCR iXBRL</title>
+<style type="text/css">
+@page { size: A4 portrait; margin: 10mm; }
+@page landscape { size: A4 landscape; }
+body {font-family: Arial, sans-serif; font-size: 13px; color: #000; background: #fff; margin: 0; padding: 0;}
+.page { page-break-after: always; box-sizing: border-box; }
+.page:last-child { page-break-after: auto; }
+.page-landscape { page: landscape; }
+.top {margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 5px;}
+h1 {font-size: 18px; margin: 0; text-align: center;}
+.section {margin-top: 30px; page-break-inside: avoid;}
+.section h2 {font-size: 15px; margin: 0 0 6px 0; border-bottom: 1px solid #000; padding-bottom: 2px;}
+.s3-subs { white-space: pre-line !important; }
+td.s1-label { background: #e6e6e6; font-weight: bold; }
+.para { white-space: pre-line; }
+th.mx-sepcol, td.mx-sepcol { width: 10px; min-width: 10px; max-width: 10px; padding-left: 1px; padding-right: 1px; }
+table {border-collapse: collapse; width: 100%; margin-bottom: 15px; table-layout: fixed;}
+th, td {border: 1px solid #000; padding: 6px 8px; vertical-align: top; overflow-wrap: anywhere; word-break: break-word; white-space: pre-line;}
+th {background: #e6e6e6; font-weight: bold; text-align: left; font-size: 11px; line-height: 1.15;}
+td {font-size: 12px; line-height: 1.2;}
+td { white-space: pre-line; }
+table.tbl-s2 td:nth-child(n+3) { white-space: nowrap; }
+th {background: #e6e6e6; font-weight: bold; text-align: left;}
+tr.mx-sep td { background: #e6e6e6; font-weight: bold; }
+tr.std-sep td { background: #e6e6e6; font-weight: bold; }
+td.mx-grey, th.mx-grey { background: #e6e6e6; }
+@media screen { .page { max-width: 1150px; margin: 15px auto; padding: 20px; } }
+</style></head><body>
+<div style="display:none">
+  <ix:header>
+    <ix:references>
+      <link:schemaRef xlink:type="simple" xlink:href="https://commission.europa.eu/taxonomy/pcbcr/2025-12-31/pcbcr_entry.xsd"/>
+    </ix:references>
+    <ix:resources>
+      <xbrli:context id="c_INST">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+      </xbrli:context>
+      <xbrli:context id="c_DUR">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_BE">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Belgium</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_BE">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Belgium</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_CZ">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Czechia</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_CZ">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Czechia</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_DE">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Germany</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_DE">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Germany</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_DK">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Denmark</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_DK">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Denmark</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_ES">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Spain</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_ES">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Spain</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_FR">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>France</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_FR">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>France</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_HU">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Hungary</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_HU">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Hungary</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_IT">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Italy</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_IT">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Italy</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_LU">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Luxembourg</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_LU">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Luxembourg</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_NL">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Netherlands (the)</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_NL">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Netherlands (the)</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_PL">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Poland</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_PL">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Poland</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_PT">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Portugal</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_PT">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Portugal</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_RO">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Romania</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_RO">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Romania</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_RU">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Russian Federation (the)</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_RU">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Russian Federation (the)</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_SE">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Sweden</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_SE">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Sweden</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_SK">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Slovakia</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_SK">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Slovakia</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_TR">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Turkey</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_TR">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Turkey</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_DUR_JUR_VN">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Viet Nam</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:context id="c_INST_JUR_VN">
+        <xbrli:entity><xbrli:identifier scheme="urn:entity:name">Lear Corporation</xbrli:identifier></xbrli:entity>
+        <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+        <xbrli:scenario>
+          <xbrldi:typedMember dimension="pcbcr:NameOfMemberStateOrTaxJurisdictionTypedAxis"><pcbcr:TYP>Viet Nam</pcbcr:TYP></xbrldi:typedMember>
+        </xbrli:scenario>
+      </xbrli:context>
+      <xbrli:unit id="u_USD"><xbrli:measure>iso4217:USD</xbrli:measure></xbrli:unit>
+      <xbrli:unit id="u_pure"><xbrli:measure>xbrli:pure</xbrli:measure></xbrli:unit>
+    </ix:resources>
+  </ix:header>
+</div>
+<div class="page page-portrait">
+  <div class="top"><h1>Public Country by Country Report (on income tax information)</h1></div>
+  <div class="section">
+    <h2>Introduction</h2>
+    <p class="para">The Lear Group's EU Report on income tax information for the year ended 31 December 2025 has been prepared to meet the requirements of Directive 2013/34/EU as amended by Directive (EU) 2021/2101 on the disclosure of income tax information, based on reporting instructions and procedures valid at the moment of preparing the Report on income tax information.
+ 
+Section 1 includes general information.
+ 
+Section 2 includes an overview of information on a country-by-country basis.
+ 
+Section 3 includes the list of entities and activities. The lines in the table in Section 3 correspond to the lines disclosed in Section 2 per Member State or tax jurisdictions required to be disclosed separately.</p>
+  </div>
+</div>
+<div class="page page-portrait">
+<div class="section"><h2>Section 1. General information</h2>
+<div class="block">
+<table><tbody>
+<tr><td class="s1-label">Name of ultimate parent of group / of standalone company</td><td><ix:nonNumeric id="f1" name="pcbcr:NameOfUltimateParentOfGroupOfStandaloneCompany" contextRef="c_DUR">Lear Corporation</ix:nonNumeric></td></tr>
+<tr><td class="s1-label">Country of registered office of ultimate parent undertaking</td><td><ix:nonNumeric id="f2" name="pcbcr:CountryOfRegisteredOfficeOfUltimateParentUndertaking" contextRef="c_DUR">The United States of America</ix:nonNumeric></td></tr>
+<tr><td class="s1-label">Date of start of financial year</td><td><ix:nonNumeric id="f3" name="pcbcr:DateOfStartOfFinancialYear" contextRef="c_DUR">2025-01-01</ix:nonNumeric></td></tr>
+<tr><td class="s1-label">Date of end of financial year</td><td><ix:nonNumeric id="f4" name="pcbcr:DateOfEndOfFinancialYear" contextRef="c_DUR">2025-12-31</ix:nonNumeric></td></tr>
+<tr><td class="s1-label">Reporting currency</td><td><ix:nonNumeric id="f5" name="pcbcr:ReportingCurrency" contextRef="c_DUR">USD</ix:nonNumeric></td></tr>
+<tr><td class="s1-label">Application of option to report in accordance with taxation reporting instructions</td><td><ix:nonNumeric id="f6" name="pcbcr:ApplicationOfOptionToReportInAccordanceWithTaxationReportingInstructions" contextRef="c_INST">Yes</ix:nonNumeric></td></tr>
+<tr><td class="s1-label">Name and registered office of a single subsidiary undertaking which has published the report on income tax information of an undertaking that is not governed by the law of a Member State</td><td><ix:nonNumeric id="f7" name="pcbcr:NameOfSingleSubsidiaryPublishingNonEUUndertakingReport" contextRef="c_DUR">Name: LEAR CORPORATION ROMANIA SRL
+Registered office: George Coșbuc Street, No. 33, Apt. Industrial Area Lear, Pitești, Argeș County
+Trade Registry Number: J03/219/2001
+Tax identification number: 13241086</ix:nonNumeric></td></tr>
+<tr><td class="s1-label">Name and address of a single branch which has published the report on income tax information of an undertaking that is not governed by the law of a Member State</td><td>-</td></tr>
+<tr><td class="s1-label">Language of report</td><td><ix:nonNumeric id="f9" name="pcbcr:LanguageOfReport" contextRef="c_DUR">english - en</ix:nonNumeric></td></tr>
+</tbody></table></div></div></div>
+<div class="page page-landscape">
+<div class="section"><h2>Section 2. Overview of information on a country-by-country basis</h2>
+<div class='block'><table class="tbl-s2">
+<thead><tr>
+<th>Name of Member State or tax jurisdiction</th>
+<th>Country code of Member State or tax jurisdiction</th>
+<th>Revenues</th>
+<th>Profit (loss) before tax</th>
+<th>Income tax paid (on cash basis)</th>
+<th>Income tax accrued – current year</th>
+<th>Accumulated earnings</th>
+<th>Number of employees</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Belgium</td>
+<td><ix:nonNumeric id="f10" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_BE">BE</ix:nonNumeric></td>
+<td><ix:nonFraction id="f11" name="pcbcr:Revenues" contextRef="c_DUR_JUR_BE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">1583058</ix:nonFraction></td>
+<td><ix:nonFraction id="f12" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_BE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">317888</ix:nonFraction></td>
+<td><ix:nonFraction id="f13" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_BE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">44930</ix:nonFraction></td>
+<td><ix:nonFraction id="f14" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_BE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">46223</ix:nonFraction></td>
+<td><ix:nonFraction id="f15" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_BE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">14940704</ix:nonFraction></td>
+<td><ix:nonFraction id="f16" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_BE" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">10</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Czechia</td>
+<td><ix:nonNumeric id="f17" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_CZ">CZ</ix:nonNumeric></td>
+<td><ix:nonFraction id="f18" name="pcbcr:Revenues" contextRef="c_DUR_JUR_CZ" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">903905352</ix:nonFraction></td>
+<td><ix:nonFraction id="f19" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_CZ" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">34672244</ix:nonFraction></td>
+<td><ix:nonFraction id="f20" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_CZ" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">12844038</ix:nonFraction></td>
+<td><ix:nonFraction id="f21" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_CZ" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">6522549</ix:nonFraction></td>
+<td><ix:nonFraction id="f22" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_CZ" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">115745180</ix:nonFraction></td>
+<td><ix:nonFraction id="f23" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_CZ" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">2412</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Germany</td>
+<td><ix:nonNumeric id="f24" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_DE">DE</ix:nonNumeric></td>
+<td><ix:nonFraction id="f25" name="pcbcr:Revenues" contextRef="c_DUR_JUR_DE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">1724179995</ix:nonFraction></td>
+<td><ix:nonFraction id="f26" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_DE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">-31209308</ix:nonFraction></td>
+<td><ix:nonFraction id="f27" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_DE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">3781144</ix:nonFraction></td>
+<td><ix:nonFraction id="f28" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_DE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">3994274</ix:nonFraction></td>
+<td><ix:nonFraction id="f29" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_DE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">-379217570</ix:nonFraction></td>
+<td><ix:nonFraction id="f30" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_DE" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">4617</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Denmark</td>
+<td><ix:nonNumeric id="f31" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_DK">DK</ix:nonNumeric></td>
+<td><ix:nonFraction id="f32" name="pcbcr:Revenues" contextRef="c_DUR_JUR_DK" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">0</ix:nonFraction></td>
+<td><ix:nonFraction id="f33" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_DK" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">0</ix:nonFraction></td>
+<td><ix:nonFraction id="f34" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_DK" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">0</ix:nonFraction></td>
+<td><ix:nonFraction id="f35" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_DK" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">0</ix:nonFraction></td>
+<td><ix:nonFraction id="f36" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_DK" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">0</ix:nonFraction></td>
+<td><ix:nonFraction id="f37" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_DK" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">0</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Spain</td>
+<td><ix:nonNumeric id="f38" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_ES">ES</ix:nonNumeric></td>
+<td><ix:nonFraction id="f39" name="pcbcr:Revenues" contextRef="c_DUR_JUR_ES" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">2020799290</ix:nonFraction></td>
+<td><ix:nonFraction id="f40" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_ES" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">28673415</ix:nonFraction></td>
+<td><ix:nonFraction id="f41" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_ES" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">8896803</ix:nonFraction></td>
+<td><ix:nonFraction id="f42" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_ES" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">6499573</ix:nonFraction></td>
+<td><ix:nonFraction id="f43" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_ES" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">691065273</ix:nonFraction></td>
+<td><ix:nonFraction id="f44" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_ES" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">2677</ix:nonFraction></td>
+</tr>
+<tr>
+<td>France</td>
+<td><ix:nonNumeric id="f45" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_FR">FR</ix:nonNumeric></td>
+<td><ix:nonFraction id="f46" name="pcbcr:Revenues" contextRef="c_DUR_JUR_FR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">309164060</ix:nonFraction></td>
+<td><ix:nonFraction id="f47" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_FR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">2237422</ix:nonFraction></td>
+<td><ix:nonFraction id="f48" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_FR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">182478</ix:nonFraction></td>
+<td><ix:nonFraction id="f49" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_FR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">429372</ix:nonFraction></td>
+<td><ix:nonFraction id="f50" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_FR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">-324714365</ix:nonFraction></td>
+<td><ix:nonFraction id="f51" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_FR" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">838</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Hungary</td>
+<td><ix:nonNumeric id="f52" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_HU">HU</ix:nonNumeric></td>
+<td><ix:nonFraction id="f53" name="pcbcr:Revenues" contextRef="c_DUR_JUR_HU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">837126237</ix:nonFraction></td>
+<td><ix:nonFraction id="f54" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_HU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">34725261</ix:nonFraction></td>
+<td><ix:nonFraction id="f55" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_HU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">1369988</ix:nonFraction></td>
+<td><ix:nonFraction id="f56" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_HU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">1578989</ix:nonFraction></td>
+<td><ix:nonFraction id="f57" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_HU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">222527404</ix:nonFraction></td>
+<td><ix:nonFraction id="f58" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_HU" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">2175</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Italy</td>
+<td><ix:nonNumeric id="f59" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_IT">IT</ix:nonNumeric></td>
+<td><ix:nonFraction id="f60" name="pcbcr:Revenues" contextRef="c_DUR_JUR_IT" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">303882514</ix:nonFraction></td>
+<td><ix:nonFraction id="f61" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_IT" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">-19865163</ix:nonFraction></td>
+<td><ix:nonFraction id="f62" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_IT" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">-1060215</ix:nonFraction></td>
+<td><ix:nonFraction id="f63" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_IT" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">250013</ix:nonFraction></td>
+<td><ix:nonFraction id="f64" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_IT" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">-130220176</ix:nonFraction></td>
+<td><ix:nonFraction id="f65" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_IT" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">1537</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Luxembourg</td>
+<td><ix:nonNumeric id="f66" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_LU">LU</ix:nonNumeric></td>
+<td><ix:nonFraction id="f67" name="pcbcr:Revenues" contextRef="c_DUR_JUR_LU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">7434309</ix:nonFraction></td>
+<td><ix:nonFraction id="f68" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_LU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">933871</ix:nonFraction></td>
+<td><ix:nonFraction id="f69" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_LU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">0</ix:nonFraction></td>
+<td><ix:nonFraction id="f70" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_LU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">0</ix:nonFraction></td>
+<td><ix:nonFraction id="f71" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_LU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">2768669214</ix:nonFraction></td>
+<td><ix:nonFraction id="f72" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_LU" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">1</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Netherlands (the)</td>
+<td><ix:nonNumeric id="f73" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_NL">NL</ix:nonNumeric></td>
+<td><ix:nonFraction id="f74" name="pcbcr:Revenues" contextRef="c_DUR_JUR_NL" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">212076373</ix:nonFraction></td>
+<td><ix:nonFraction id="f75" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_NL" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">319870</ix:nonFraction></td>
+<td><ix:nonFraction id="f76" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_NL" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">1927441</ix:nonFraction></td>
+<td><ix:nonFraction id="f77" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_NL" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">1722828</ix:nonFraction></td>
+<td><ix:nonFraction id="f78" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_NL" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">-24083690</ix:nonFraction></td>
+<td><ix:nonFraction id="f79" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_NL" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">4</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Poland</td>
+<td><ix:nonNumeric id="f80" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_PL">PL</ix:nonNumeric></td>
+<td><ix:nonFraction id="f81" name="pcbcr:Revenues" contextRef="c_DUR_JUR_PL" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">861233145</ix:nonFraction></td>
+<td><ix:nonFraction id="f82" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_PL" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">-21443372</ix:nonFraction></td>
+<td><ix:nonFraction id="f83" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_PL" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">301843</ix:nonFraction></td>
+<td><ix:nonFraction id="f84" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_PL" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">249134</ix:nonFraction></td>
+<td><ix:nonFraction id="f85" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_PL" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">45673055</ix:nonFraction></td>
+<td><ix:nonFraction id="f86" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_PL" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">8141</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Portugal</td>
+<td><ix:nonNumeric id="f87" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_PT">PT</ix:nonNumeric></td>
+<td><ix:nonFraction id="f88" name="pcbcr:Revenues" contextRef="c_DUR_JUR_PT" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">168971978</ix:nonFraction></td>
+<td><ix:nonFraction id="f89" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_PT" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">10098723</ix:nonFraction></td>
+<td><ix:nonFraction id="f90" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_PT" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">2953857</ix:nonFraction></td>
+<td><ix:nonFraction id="f91" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_PT" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">1290695</ix:nonFraction></td>
+<td><ix:nonFraction id="f92" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_PT" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">30769293</ix:nonFraction></td>
+<td><ix:nonFraction id="f93" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_PT" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">595</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Romania</td>
+<td><ix:nonNumeric id="f94" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_RO">RO</ix:nonNumeric></td>
+<td><ix:nonFraction id="f95" name="pcbcr:Revenues" contextRef="c_DUR_JUR_RO" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">275690203</ix:nonFraction></td>
+<td><ix:nonFraction id="f96" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_RO" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">3718470</ix:nonFraction></td>
+<td><ix:nonFraction id="f97" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_RO" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">4466561</ix:nonFraction></td>
+<td><ix:nonFraction id="f98" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_RO" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">3621739</ix:nonFraction></td>
+<td><ix:nonFraction id="f99" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_RO" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">27040067</ix:nonFraction></td>
+<td><ix:nonFraction id="f100" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_RO" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">2754</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Russian Federation (the)</td>
+<td><ix:nonNumeric id="f101" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_RU">RU</ix:nonNumeric></td>
+<td><ix:nonFraction id="f102" name="pcbcr:Revenues" contextRef="c_DUR_JUR_RU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">2821085</ix:nonFraction></td>
+<td><ix:nonFraction id="f103" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_RU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">1802168</ix:nonFraction></td>
+<td><ix:nonFraction id="f104" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_RU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">741394</ix:nonFraction></td>
+<td><ix:nonFraction id="f105" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_RU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">325733</ix:nonFraction></td>
+<td><ix:nonFraction id="f106" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_RU" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">11383900</ix:nonFraction></td>
+<td><ix:nonFraction id="f107" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_RU" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">13</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Sweden</td>
+<td><ix:nonNumeric id="f108" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_SE">SE</ix:nonNumeric></td>
+<td><ix:nonFraction id="f109" name="pcbcr:Revenues" contextRef="c_DUR_JUR_SE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">14106006</ix:nonFraction></td>
+<td><ix:nonFraction id="f110" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_SE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">-8613651</ix:nonFraction></td>
+<td><ix:nonFraction id="f111" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_SE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">10588</ix:nonFraction></td>
+<td><ix:nonFraction id="f112" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_SE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">1070</ix:nonFraction></td>
+<td><ix:nonFraction id="f113" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_SE" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">-302283336</ix:nonFraction></td>
+<td><ix:nonFraction id="f114" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_SE" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">78</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Slovakia</td>
+<td><ix:nonNumeric id="f115" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_SK">SK</ix:nonNumeric></td>
+<td><ix:nonFraction id="f116" name="pcbcr:Revenues" contextRef="c_DUR_JUR_SK" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">579100207</ix:nonFraction></td>
+<td><ix:nonFraction id="f117" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_SK" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">6714419</ix:nonFraction></td>
+<td><ix:nonFraction id="f118" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_SK" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">-4781027</ix:nonFraction></td>
+<td><ix:nonFraction id="f119" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_SK" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">1452899</ix:nonFraction></td>
+<td><ix:nonFraction id="f120" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_SK" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">8770888</ix:nonFraction></td>
+<td><ix:nonFraction id="f121" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_SK" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">1574</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Turkey</td>
+<td><ix:nonNumeric id="f122" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_TR">TR</ix:nonNumeric></td>
+<td><ix:nonFraction id="f123" name="pcbcr:Revenues" contextRef="c_DUR_JUR_TR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">13676323</ix:nonFraction></td>
+<td><ix:nonFraction id="f124" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_TR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">875247</ix:nonFraction></td>
+<td><ix:nonFraction id="f125" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_TR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">63030</ix:nonFraction></td>
+<td><ix:nonFraction id="f126" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_TR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">76948</ix:nonFraction></td>
+<td><ix:nonFraction id="f127" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_TR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">12059322</ix:nonFraction></td>
+<td><ix:nonFraction id="f128" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_TR" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">0</ix:nonFraction></td>
+</tr>
+<tr>
+<td>Viet Nam</td>
+<td><ix:nonNumeric id="f129" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_VN">VN</ix:nonNumeric></td>
+<td><ix:nonFraction id="f130" name="pcbcr:Revenues" contextRef="c_DUR_JUR_VN" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">27168623</ix:nonFraction></td>
+<td><ix:nonFraction id="f131" name="pcbcr:ProfitLossBeforeTax" contextRef="c_DUR_JUR_VN" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">2075133</ix:nonFraction></td>
+<td><ix:nonFraction id="f132" name="pcbcr:IncomeTaxPaidOnCashBasis" contextRef="c_DUR_JUR_VN" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">777536</ix:nonFraction></td>
+<td><ix:nonFraction id="f133" name="pcbcr:IncomeTaxAccrued" contextRef="c_DUR_JUR_VN" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">435176</ix:nonFraction></td>
+<td><ix:nonFraction id="f134" name="pcbcr:AccumulatedEarnings" contextRef="c_INST_JUR_VN" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">3933074</ix:nonFraction></td>
+<td><ix:nonFraction id="f135" name="pcbcr:NumberOfEmployees" contextRef="c_INST_JUR_VN" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">393</ix:nonFraction></td>
+</tr>
+<tr class="mx-sep"><td colspan="8">All other tax jurisdictions (aggregated basis)</td></tr>
+<tr>
+<td class="mx-grey"></td><td class="mx-grey"></td>
+<td><ix:nonFraction id="f136" name="pcbcr:RevenuesOtherTaxJurisdictions" contextRef="c_DUR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">28310864784</ix:nonFraction></td>
+<td><ix:nonFraction id="f137" name="pcbcr:ProfitLossBeforeTaxOtherTaxJurisdictions" contextRef="c_DUR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">698939386</ix:nonFraction></td>
+<td><ix:nonFraction id="f138" name="pcbcr:IncomeTaxPaidOnCashBasisOtherTaxJurisdictions" contextRef="c_DUR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">262811279</ix:nonFraction></td>
+<td><ix:nonFraction id="f139" name="pcbcr:IncomeTaxAccruedOtherTaxJurisdictions" contextRef="c_DUR" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">236167395</ix:nonFraction></td>
+<td><ix:nonFraction id="f140" name="pcbcr:AccumulatedEarningsOtherTaxJurisdictions" contextRef="c_INST" unitRef="u_USD" decimals="0" format="ixt:num-dot-decimal">4759711828</ix:nonFraction></td>
+<td><ix:nonFraction id="f141" name="pcbcr:NumberOfEmployeesOtherTaxJurisdictions" contextRef="c_INST" unitRef="u_pure" decimals="0" format="ixt:num-dot-decimal">167920</ix:nonFraction></td>
+</tr>
+</tbody>
+</table></div></div></div>
+<div class="page page-landscape">
+<div class="section"><h2>Section 3. List of subsidiaries and activities</h2>
+<div class='block'><table><thead><tr><th>Name of Member State or tax jurisdiction</th><th>Country code of Member State or tax jurisdiction</th><th>Name of subsidiary undertakings consolidated in financial statements of ultimate parent undertaking</th><th>Brief description per country of nature of activities in Member State or tax jurisdiction</th></tr></thead><tbody>
+<tr><td>Belgium</td>
+<td><ix:nonNumeric id="f142" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_BE">BE</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f143" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_BE">Lear Corporation Belgium B.V.</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f144" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_BE">Research and Development / Administrative Management or Support Services</ix:nonNumeric></td>
+</tr>
+<tr><td>Czechia</td>
+<td><ix:nonNumeric id="f145" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_CZ">CZ</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f146" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_CZ">HG tronic,spol. s.r.o.
+Lear Corporation Czech Republic s.r.o.
+Lear Corporation Engineering Czech Republic s.r.o.</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f147" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_CZ">Research and Development / Manufacturing or Production / Administrative Management or Support Services</ix:nonNumeric></td>
+</tr>
+<tr><td>Denmark</td>
+<td><ix:nonNumeric id="f148" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_DK">DK</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f149" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_DK">Eagle Ottawa Foreign Holdings ApS</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f150" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_DK">Dormant</ix:nonNumeric></td>
+</tr>
+<tr><td>France</td>
+<td><ix:nonNumeric id="f151" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_FR">FR</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f152" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_FR">Lear Corporation France SAS
+Lear Corporation Ingenierie, S.A.S.
+Lear Corporation Loire, S.A.S.
+Lear Corporation Seating France Feignies SAS
+Lear Corporation Seating France SAS</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f153" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_FR">Research and Development / Manufacturing or Production / Administrative Management or Support Services / Holding Shares or Other Equity Instruments</ix:nonNumeric></td>
+</tr>
+<tr><td>Germany</td>
+<td><ix:nonNumeric id="f154" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_DE">DE</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f155" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_DE">Bauerhin-Elektro-Warme GmbH
+Lear Corporation Beteiligungs GmbH
+Lear Corporation Engineering GmbH
+Lear Corporation GmbH</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f156" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_DE">Research and Development / Manufacturing or Production / Administrative Management or Support Services / Holding Shares or Other Equity Instruments / Dormant</ix:nonNumeric></td>
+</tr>
+<tr><td>Hungary</td>
+<td><ix:nonNumeric id="f157" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_HU">HU</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f158" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_HU">Eagle Ottawa Hungary Kft.
+Lear Corporation Hungary Automotive Manufacturing Kft.</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f159" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_HU">Research and Development / Manufacturing or Production / Administrative Management or Support Services / Holding Shares or Other Equity Instruments</ix:nonNumeric></td>
+</tr>
+<tr><td>Italy</td>
+<td><ix:nonNumeric id="f160" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_IT">IT</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f161" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_IT">Lear Corporation Engineering Italy S.r.L.
+Lear Corporation Italia S.r.l.
+Lear Specialty Cars Italy S.r.l.</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f162" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_IT">Research and Development / Manufacturing or Production</ix:nonNumeric></td>
+</tr>
+<tr><td>Luxembourg</td>
+<td><ix:nonNumeric id="f163" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_LU">LU</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f164" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_LU">Lear (Luxembourg) S.a.r.l.
+Lear East European Operations S.a.r.l.</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f165" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_LU">Administrative Management or Support Services / Internal Group Finance / Holding Shares or Other Equity Instruments</ix:nonNumeric></td>
+</tr>
+<tr><td>Netherlands (the)</td>
+<td><ix:nonNumeric id="f166" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_NL">NL</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f167" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_NL">Lear Automotive Services (Netherlands) B.V.</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f168" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_NL">Administrative Management or Support Services / Internal Group Finance / Holding Shares or Other Equity Instruments</ix:nonNumeric></td>
+</tr>
+<tr><td>Poland</td>
+<td><ix:nonNumeric id="f169" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_PL">PL</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f170" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_PL">Lear Corporation Engineering Poland Sp.z.o.o.
+Lear Corporation Poland II Sp.z o.o.</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f171" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_PL">Research and Development / Manufacturing or Production</ix:nonNumeric></td>
+</tr>
+<tr><td>Portugal</td>
+<td><ix:nonNumeric id="f172" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_PT">PT</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f173" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_PT">Lear Corporation Valenca, Unipessoal, Lda.
+StoneShield Engineering, Lda.</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f174" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_PT">Research and Development / Manufacturing or Production</ix:nonNumeric></td>
+</tr>
+<tr><td>Romania</td>
+<td><ix:nonNumeric id="f175" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_RO">RO</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f176" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_RO">Lear Corporation Romania s.r.l.
+Thagora Technology S.r.L.</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f177" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_RO">Manufacturing or Production</ix:nonNumeric></td>
+</tr>
+<tr><td>Russian Federation (the)</td>
+<td><ix:nonNumeric id="f178" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_RU">RU</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f179" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_RU">Lear LLC</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f180" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_RU">Administrative Management or Support Services / Dormant</ix:nonNumeric></td>
+</tr>
+<tr><td>Slovakia</td>
+<td><ix:nonNumeric id="f181" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_SK">SK</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f182" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_SK">Lear Corporation Seating Slovakia s.r.o.</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f183" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_SK">Research and Development / Manufacturing or Production</ix:nonNumeric></td>
+</tr>
+<tr><td>Spain</td>
+<td><ix:nonNumeric id="f184" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_ES">ES</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f185" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_ES">Lear Corporation Ara, S.L.U.
+Lear Corporation Ardasa, S.L.U.
+Lear Corporation Asientos, S.L.U.
+Lear Corporation Engineering Spain S.L.U.
+Lear Corporation Holdings Spain, S.L.U.
+Lear Corporation Martorell, S.L.U.
+Lear Corporation Pontevedra, S.L.U.
+Lear Corporation Spain Alava, S.L.U.
+Lear European Holding S.L.U.</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f186" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_ES">Research and Development / Manufacturing or Production / Administrative Management or Support Services / Holding Shares or Other Equity Instruments / Dormant</ix:nonNumeric></td>
+</tr>
+<tr><td>Sweden</td>
+<td><ix:nonNumeric id="f187" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_SE">SE</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f188" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_SE">Lear Corporation Gothenburg AB
+Lear Corporation Sweden AB (&quot;Cordelia Autoparts Sweden AB&quot;)</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f189" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_SE">Research and Development / Administrative Management or Support Services / Dormant</ix:nonNumeric></td>
+</tr>
+<tr><td>Turkey</td>
+<td><ix:nonNumeric id="f190" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_TR">TR</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f191" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_TR">Lear Otomotive Sanayi Ve Ticaret Limited Sirketi</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f192" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_TR">Sales, Marketing or Distribution</ix:nonNumeric></td>
+</tr>
+<tr><td>Viet Nam</td>
+<td><ix:nonNumeric id="f193" name="pcbcr:CountryCodeOfMemberStateOrTaxJurisdiction" contextRef="c_DUR_JUR_VN">VN</ix:nonNumeric></td>
+<td class="s3-subs"><ix:nonNumeric id="f194" name="pcbcr:DisclosureOfNamesOfSubsidiaryUndertakingsConsolidatedInFinancialStatementsOfUltimateParentUndertakingExplanatory" contextRef="c_DUR_JUR_VN">IGB Automotive Vietnam Co., Ltd.
+Lear Corporation (Vietnam) Limited</ix:nonNumeric></td>
+<td><ix:nonNumeric id="f195" name="pcbcr:DescriptionOfNatureOfActivitiesOfSubsidiaryUndertakingsInMemberStateOrTaxJurisdictionExplanatory" contextRef="c_DUR_JUR_VN">Manufacturing or Production</ix:nonNumeric></td>
+</tr>
+</tbody></table></div></div></div>
+<div class="page page-portrait">
+<div class="section"><h2>Section 4. Omitted information</h2>
+<div class="block"><table><thead><tr><th colspan="3">Information omitted (if any) for this financial year</th></tr><tr><th>Information omitted</th><th>Information omitted, other tax jurisdictions</th><th>Explanation of reason for omission of information</th></tr></thead><tbody>
+<tr><td><ix:nonNumeric id="f196" name="pcbcr:DisclosureOfTypeOfInformationOmittedExplanatory" contextRef="c_DUR">Not the case</ix:nonNumeric></td><td><ix:nonNumeric id="f197" name="pcbcr:DisclosureOfTypeOfInformationOmittedOtherTaxJurisdictionsExplanatory" contextRef="c_DUR">Not the case</ix:nonNumeric></td><td><ix:nonNumeric id="f198" name="pcbcr:ExplanationOfReasonForOmissionOfInformationExplanatory" contextRef="c_DUR">Not the case</ix:nonNumeric></td></tr>
+<tr><th colspan="3">Disclosure of information omitted for previous financial years</th></tr>
+<tr><td colspan="3"><ix:nonNumeric id="f199" name="pcbcr:DisclosureOfInformationOmittedForPreviousFinancialYearsExplanatory" contextRef="c_DUR">Not the case</ix:nonNumeric></td></tr>
+</tbody></table></div></div></div>
+<div class="page page-portrait">
+<div class="section"><h2>Section 5. Explanations for material discrepancies between income tax paid and accrued</h2>
+<div class="block">
+<table><thead><tr><th colspan="2">Explanation of any material discrepancies between income tax paid and accrued</th></tr></thead><tbody>
+<tr><td colspan="2"><ix:nonNumeric id="f200" name="pcbcr:ExplanationOfAnyMaterialDiscrepanciesBetweenIncomeTaxPaidAndAccruedExplanatory" contextRef="c_DUR">No material discrepancies as such. 
+The difference arises due to various timing differences and application of local legislation and rules.</ix:nonNumeric></td></tr>
+</tbody></table></div></div></div>
+<div class="page page-portrait">
+  <div class="section">
+    <h2>Conclusion</h2>
+  </div>
+</div>
+</body></html>
